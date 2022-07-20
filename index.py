@@ -1,0 +1,37 @@
+import requests as r
+# THIS SCRIPT IS USED TO GATHER INFORMATION ABOUT ANY NAME OR OBJECT USING GOOGLE DORKS 
+obj = input("Enter name or words to get info about. ")
+
+google_dork = r.get('https://www.google.com/search?q=intitile:'+obj)
+# print(insta.url)
+# print(fb.url)
+google_dork1 = r.get('https://www.google.com/search?q=inurl:'+obj)
+google_dork2 = r.get('https://www.google.com/search?q=insearch:'+obj)
+google_dork3 = r.get('https://www.google.com/search?q=allintext:'+obj)
+google_dork4 = r.get('https://www.google.com/search?q=intext:'+obj)
+google_dork5 = r.get('https://www.google.com/search?q=filetype:'+obj)
+google_dork6 = r.get('https://www.google.com/search?q=ext:'+obj)
+google_dork7 = r.get('https://www.google.com/search?q=allintitle:'+obj)
+google_dork8 = r.get('https://www.google.com/search?q=intitle:'+obj)
+google_dork9 = r.get('https://www.google.com/search?q=site:'+obj)
+google_dork10 = r.get('https://www.google.com/search?q=stocks:'+obj)
+google_dork11= r.get('https://www.google.com/search?q=define:'+obj)
+google_dork12= r.get('https://www.google.com/search?q=info:'+obj)
+google_dork13= r.get('https://www.google.com/search?q=related:'+obj)
+google_dork14= r.get('https://www.google.com/search?q=link:'+obj)
+google_dork15= r.get('https://www.google.com/search?q=cache:'+obj)
+
+print(google_dork.url),print(google_dork1.url),print(google_dork2.url),print(google_dork3.url),print(google_dork4.url)
+print(google_dork5.url)
+print(google_dork6.url)
+print(google_dork7.url)
+print(google_dork8.url)
+print(google_dork9.url)
+print(google_dork10.url)
+print(google_dork11.url)
+print(google_dork12.url)
+print(google_dork13.url)
+print(google_dork14.url)
+print(google_dork15.url)
+
+
